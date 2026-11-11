@@ -1,0 +1,9 @@
+project: savantenvs/nanoflann
+target: fuzz_load_index
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_load_index/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_load_index
+    libfuzzer: true
+    timeout: 10

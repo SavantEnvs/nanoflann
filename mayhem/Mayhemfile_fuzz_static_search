@@ -1,0 +1,6 @@
+project: savantenvs/nanoflann
+target: fuzz_static_search
+cmds:
+  - cmd: /mayhem/fuzz_static_search
+    libfuzzer: true
+    timeout: 10
