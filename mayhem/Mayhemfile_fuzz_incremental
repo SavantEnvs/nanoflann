@@ -1,0 +1,6 @@
+project: savantenvs/nanoflann
+target: fuzz_incremental
+cmds:
+  - cmd: /mayhem/fuzz_incremental
+    libfuzzer: true
+    timeout: 10

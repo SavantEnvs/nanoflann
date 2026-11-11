@@ -1,0 +1,12 @@
+# Build artifacts of the previous build, rebuilt in the image by mayhem/build.sh.
+# .git stays in the context: the image holds the full repo history.
+build-tests
+build-fuzz
+/fuzz_static_search
+/fuzz_static_search-standalone
+/fuzz_load_index
+/fuzz_load_index-standalone
+/fuzz_dynamic
+/fuzz_dynamic-standalone
+/fuzz_incremental
+/fuzz_incremental-standalone
